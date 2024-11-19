@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallnSight - Smart Call Analysis</title>
+    <meta name="description" content="Advanced call analysis and spam detection powered by AI">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-glow"></div>
+                <i class="lucide-shield icon-logo"></i>
+            </div>
+            <h1 class="title">CallnSight</h1>
+            <p class="subtitle">Advanced call analysis powered by AI</p>
+        </header>
+
+        <div class="info-cards">
+            <div class="info-card">
+                <i class="lucide-shield-alert info-icon"></i>
+                <h3>Spam Protection</h3>
+                <p>Our AI analyzes call patterns and voice characteristics to identify potential spam calls.</p>
+            </div>
+            <div class="info-card">
+                <i class="lucide-brain info-icon"></i>
+                <h3>AI-Powered</h3>
+                <p>Advanced machine learning algorithms detect voice patterns associated with fraudulent calls.</p>
+            </div>
+            <div class="info-card">
+                <i class="lucide-check-circle info-icon"></i>
+                <h3>99.9% Accuracy</h3>
+                <p>High-precision detection helps you avoid scams and unwanted calls effectively.</p>
+            </div>
+        </div>
+
+        <form class="analysis-form">
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <div class="input-with-icon">
+                    <i class="lucide-phone icon-input"></i>
+                    <input type="tel" id="phone" placeholder="Enter phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </div>
+                <span class="input-hint">Format: 123-456-7890</span>
+            </div>
+
+            <div class="input-group">
+                <label for="recording">Call Recording</label>
+                <div class="file-drop-zone" id="dropZone">
+                    <i class="lucide-upload-cloud icon-upload"></i>
+                    <div class="upload-text">
+                        <p>Drop your call recording here</p>
+                        <span>or click to browse</span>
+                    </div>
+                    <input type="file" id="recording" accept="audio/*" class="file-input" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">
+                <i class="lucide-search"></i>
+                Analyze Call
+            </button>
+        </form>
+
+        <div class="features-section">
+            <h2>How It Works</h2>
+            <div class="feature-steps">
+                <div class="feature-step">
+                    <div class="step-number">1</div>
+                    <h4>Upload Recording</h4>
+                    <p>Submit your call recording in any common audio format</p>
+                </div>
+                <div class="feature-step">
+                    <div class="step-number">2</div>
+                    <h4>AI Analysis</h4>
+                    <p>Our AI processes voice patterns and call characteristics</p>
+                </div>
+                <div class="feature-step">
+                    <div class="step-number">3</div>
+                    <h4>Get Results</h4>
+                    <p>Receive detailed analysis and spam probability score</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="privacy-note">
+                <i class="lucide-lock icon-small"></i>
+                Your data is encrypted and never stored
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
