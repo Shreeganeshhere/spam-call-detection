@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallnSight - Safe Call Detected</title>
+    <meta name="description" content="Call Analysis Result - Safe Call">
+    <link rel="stylesheet" href="safe_result.css">
+    <link rel="stylesheet" href="https://unpkg.com/lucide-static/font/lucide.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo-glow"></div>
+                <i class="lucide-shield icon-logo"></i>
+            </div>
+            <h1 class="title">Analysis Complete</h1>
+        </header>
+
+        <main class="result-container">
+            <div class="result-card">
+                <div class="status-badge safe">
+                    <i class="lucide-check-circle"></i>
+                    <span>Safe Call</span>
+                </div>
+
+                <div class="phone-details">
+                    <div class="number-display">
+                        <i class="lucide-phone"></i>
+                        <span class="phone-number">+1 (555) 123-4567</span>
+                    </div>
+                    <div class="detection-time">
+                        Analyzed on May 15, 2024 at 14:30
+                    </div>
+                </div>
+
+                <div class="risk-meter">
+                    <div class="risk-label">Trust Score</div>
+                    <div class="meter-bar">
+                        <div class="meter-fill low"></div>
+                    </div>
+                    <div class="risk-value">Low Risk (8%)</div>
+                </div>
+
+                <div class="analysis-details">
+                    <h2>Analysis Results</h2>
+                    <div class="detail-grid">
+                        <div class="detail-item">
+                            <i class="lucide-check"></i>
+                            <div class="detail-content">
+                                <h3>Voice Pattern</h3>
+                                <p>Natural speech patterns verified</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="lucide-history"></i>
+                            <div class="detail-content">
+                                <h3>Call History</h3>
+                                <p>No negative reports found</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="lucide-map-pin"></i>
+                            <div class="detail-content">
+                                <h3>Origin</h3>
+                                <p>Verified local business area</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="lucide-activity"></i>
+                            <div class="detail-content">
+                                <h3>Call Pattern</h3>
+                                <p>Normal calling behavior</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="save-button">
+                        <i class="lucide-bookmark"></i>
+                        Save to Contacts
+                    </button>
+                    <button class="verify-button">
+                        <i class="lucide-search"></i>
+                        Verify Business
+                    </button>
+                </div>
+            </div>
+
+            <div class="verification-panel">
+                <h2>Verification Details</h2>
+                <ul class="verify-list">
+                    <li>
+                        <i class="lucide-check-circle"></i>
+                        Number registered to legitimate business
+                    </li>
+                    <li>
+                        <i class="lucide-building"></i>
+                        Business verified in local directory
+                    </li>
+                    <li>
+                        <i class="lucide-users"></i>
+                        Positive community feedback
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <button class="new-analysis">
+                <i class="lucide-refresh-ccw"></i>
+                Analyze Another Call
+            </button>
+        </footer>
+    </div>
+</body>
+</html>
